@@ -1,0 +1,19 @@
+/* === Logo module === */
+
+.site-logo-link{
+  display: block;
+  width: 150px;
+  height: 75px;
+  & img, & span{
+    float: left;
+  }
+  img{
+    margin-right: -15px;
+  }
+  span{
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: $light-color;
+  }
+}

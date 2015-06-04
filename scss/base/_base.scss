@@ -1,0 +1,40 @@
+/* === Base styles === */
+
+body{
+  font-family: pt_sans_regular, sans-serif;
+  font-size: $base-font-size;
+  /*min-width: 320px;*/
+}
+
+a{
+
+  text-decoration: none;
+}
+
+.footer{
+  font-family: lintel_regular, sans-serif;
+  font-size: em(13px);
+  color: $white;
+  line-height: 1.15em;
+  background-color: $theme-color;
+}
+
+.module {
+  h2{
+    color: $theme-color;
+    line-height: 1.25em;
+  }
+  h3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: em(24px);
+    color: $dark-color;
+    line-height: 1.34em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body{
+    font-size: 20px;
+  }
+ }

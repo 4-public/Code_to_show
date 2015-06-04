@@ -1,0 +1,19 @@
+/* === Footer links module === */
+
+.footer-links{
+  ul{
+    display: inline-block;
+    &:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  li{
+    float: left;
+    margin: 0 10px;
+  }
+  a{
+    color: $white;
+  }
+}

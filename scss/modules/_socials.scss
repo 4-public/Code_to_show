@@ -1,0 +1,117 @@
+/* === Socials module === */
+
+.socials{
+  padding: 0 15%;
+  &-list{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 50px 0;
+    a{
+      display: block;
+      width: 41px;
+      height: 41px;
+      background-size: 41px 41px;
+    }
+  }
+}
+
+.facebook{
+  background-image: url(../img/social/Facebook.png);
+}
+.twitter{
+  background-image: url(../img/social/Twitter.png);
+}
+.linkedin{
+  background-image: url(../img/social/LinkedIN.png);
+}
+.instagram{
+  background-image: url(../img/social/Instagram.png);
+}
+.googleplus{
+  background-image: url(../img/social/Google.png);
+}
+.youtube{
+  background-image: url(../img/social/Youtube.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi){
+
+  .facebook{
+    background-image: url(../img/social/Facebook@2x.png);
+  }
+  .twitter{
+    background-image: url(../img/social/Twitter@2x.png);
+  }
+  .linkedin{
+    background-image: url(../img/social/LinkedIN@2x.png);
+  }
+  .instagram{
+    background-image: url(../img/social/Instagram@2x.png);
+  }
+  .googleplus{
+    background-image: url(../img/social/Google@2x.png);
+  }
+  .youtube{
+    background-image: url(../img/social/Youtube@2x.png);
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .socials{
+    padding: 0 20px;
+    &-list{
+      padding: 30px 0;
+      a{
+        width: 29px;
+        height: 29px;
+        background-size: 29px 29px;
+      }
+    }
+  }
+
+  .facebook{
+    background-image: url(../img/social/Facebook_mobile.png);
+  }
+  .twitter{
+    background-image: url(../img/social/Twitter_mobile.png);
+  }
+  .linkedin{
+    background-image: url(../img/social/LinkedIN_mobile.png);
+  }
+  .instagram{
+    background-image: url(../img/social/Instagram_mobile.png);
+  }
+  .googleplus{
+    background-image: url(../img/social/Google_mobile.png);
+  }
+  .youtube{
+    background-image: url(../img/social/Youtube_mobile.png);
+  }
+
+}
+
+@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 640px) and (min-resolution: 144dpi){
+
+  .facebook{
+    background-image: url(../img/social/Facebook_mobile@2x.png);
+  }
+  .twitter{
+    background-image: url(../img/social/Twitter_mobile@2x.png);
+  }
+  .linkedin{
+    background-image: url(../img/social/LinkedIN_mobile@2x.png);
+  }
+  .instagram{
+    background-image: url(../img/social/Instagram_mobile@2x.png);
+  }
+  .googleplus{
+    background-image: url(../img/social/Google_mobile@2x.png);
+  }
+  .youtube{
+    background-image: url(../img/social/Youtube_mobile@2x.png);
+  }
+
+}

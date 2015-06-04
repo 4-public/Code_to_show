@@ -1,0 +1,240 @@
+/* === Slider module === */
+.banner{
+  background-color: #000;
+  background-image: url(../img/header/slider/banner_desktop.png);
+  .slider{
+    max-width: $grid-width;
+    margin: 0 auto;
+  }
+}
+
+.slider{
+  position: relative;
+  height: 520px;
+  overflow: hidden;
+  color: $white;
+
+  &-nav{
+    position: absolute;
+    top: 236.5px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &-prev{
+    width: 18px;
+    height: 47px;
+    background-size: 18px 47px;
+    background-image: url(../img/header/slider/arrow_left.png);
+  }
+  &-next{
+    width: 18px;
+    height: 47px;
+    background-size: 18px 47px;
+    background-image: url(../img/header/slider/arrow_right.png);
+  }
+  &-pager{
+    position: absolute;
+    left:50%;
+    bottom: 50px;
+    width: 84px;
+    margin-left: -35px;
+    a{
+      float: left;
+      width: 8px;
+      height: 8px;
+      border: 2px solid $light-color;
+      &:not(:first-child){
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+.slide{
+  display: flex;
+  width: 100%;
+
+  .feature{
+    display: inline-block;
+    max-width: 500px;
+    margin: auto 0 auto 90px;
+    padding: 25px;
+    vertical-align: middle;
+    background-color: $black-transparent;
+    &-title{
+      font-size: em(40px);
+      line-height: 1.3em;
+      text-transform: uppercase;
+    }
+    &-descr{
+      display: block;
+      padding: 15px 0;
+      font-size: em(18px);
+      line-height: 1.34em;
+    }
+    &-date{
+      display: inline-block;
+      font-size: em(20px);
+      line-height: 1.3em;
+      img{
+        margin-right: 30px;
+        vertical-align: middle;
+      }
+    }
+    &-btn{
+      display: inline-block;
+      margin-left: 30px;
+      padding: 13px 25px;
+      font-size: em(14px);
+      line-height: 1.36em;
+      text-transform: uppercase;
+      color: $white;
+      background-color: $theme-color;
+      border-radius: 5px;
+    }
+  }
+}
+
+.slide-container{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 400%;
+  height: 520px;
+  transform: translateX(0px);
+  transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi){
+  .banner{
+    background-image: url(../img/header/slider/banner_desktop@2x.png);
+  }
+  .slider{
+    &-prev{
+      background-image: url(../img/header/slider/arrow_left@2x.png);
+    }
+    &-next{
+      background-image: url(../img/header/slider/arrow_right@2x.png);
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .slider-nav{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (min-width: 970px) {
+  .banner{
+    background-image: url(../img/header/slider/banner_desktop_hd.png);
+  }
+}
+
+@media only screen and (min-width: 970px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 970px) and (min-resolution: 144dpi){
+  .banner{
+    background-image: url(../img/header/slider/banner_desktop_hd@2x.png);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner{
+    background-image: url(../img/header/slider/banner_tablet.png);
+
+    .slider{
+      height: 490px;
+      &-nav{
+        display: none;
+      }
+    }
+
+    .slide-container{
+      height: 490px;
+    }
+  }
+
+  .slide{
+    .feature{
+      margin: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 144dpi){
+  .banner{
+    background-image: url(../img/header/slider/banner_tablet@2x.png);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .banner{
+
+    .feature{
+      margin: auto 20px;
+      text-align: center;
+      &-descr, &-title, &-date{
+        text-align: left;
+      }
+    }
+    .slide-container{
+      height: 415px;
+    }
+  }
+
+}
+@media screen and (max-width: 320px) {
+  .banner{
+    background-image: url(../img/header/slider/banner_mobile.png);
+
+    .slider{
+      height: 415px;
+
+      &-pager{
+        bottom: 20px;
+      }
+    }
+
+    .slide-container{
+      height: 415px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .slider{
+    font-size: 14px;
+  }
+
+  .slide{
+    .feature{
+      display: block;
+      margin: 20px 20px auto;
+
+      &-date{
+        font-size: 1.15em;
+        img{
+          margin-right: 5px;
+        }
+      }
+      &-btn{
+        margin: 15px 0 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 320px) and (min-resolution: 144dpi){
+  .banner{
+    background-image: url(../img/header/slider/banner_mobile@2x.png);
+  }
+}

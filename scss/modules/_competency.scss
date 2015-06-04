@@ -1,0 +1,29 @@
+/* === Competency module === */
+
+.news{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-height: 440px;
+  &-article{
+    color: $light-color;
+
+    &:not(:first-child){
+      padding-top: 10px;
+    }
+
+    &-date{
+      font-size: em(12px);
+      color: $black;
+    }
+
+    h2{
+      margin: 5px 0;
+    }
+
+    p{
+    font-size: em(14px);
+    }
+  }
+}

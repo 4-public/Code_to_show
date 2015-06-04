@@ -1,0 +1,36 @@
+/* === Conference agenda module === */
+
+.events{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-height: 440px;
+  &-item{
+    position: relative;
+    padding-left: 20px;
+    & span{
+      display: block;
+      line-height: 1.25em;
+    }
+    &-date{
+      font-size: em(12px);
+      color: $black;
+    }
+    &-title{
+      font-size: em(16px);
+      color: $light-color;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0px;
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $theme-color;
+    }
+  }
+}

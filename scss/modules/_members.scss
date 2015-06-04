@@ -1,0 +1,42 @@
+/* === Members list module === */
+
+.list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-height: 440px;
+}
+.member{
+  position: relative;
+  padding-left: 50px;
+  & span, & a{
+    display: block;
+    font-size: em(16px);
+    line-height: 1.25em;
+  }
+  &-name{
+    color: $theme-color;
+  }
+  &-from{
+    color: $light-color;
+  }
+  &:after{
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: $light-color;
+    border-radius: 50%;
+    border: 1px solid $theme-color;
+  }
+  @for $i from 1 through 7 {
+    &:nth-child(#{$i}):after {
+      content: '#{$i}'
+    }
+  }
+}

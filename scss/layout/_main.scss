@@ -1,0 +1,64 @@
+/* === Main === */
+
+.module{
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.main{
+  background-image: url(../img/bg/textura.png);
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 5px 0;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi){
+  .main{
+    background-image: url(../img/bg/textura@2x.png);
+    background-size: 1440px 1329px;
+  }
+}
+
+.competency, .conference, .members{
+  flex-basis: 237px;
+  flex-grow: 1;
+}
+
+.last-article{
+flex-basis: 384px;
+flex-grow: 1;
+}
+
+.centre-life{
+  flex-basis: 384px;
+  flex-grow: 1;
+}
+
+.socials{
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 970px) {
+  .competency{
+    flex-grow: 15;
+  }
+  .conference, .members{
+    flex-grow: 4;
+  }
+}
+@media screen and (max-width: 768px) {
+  .competency{
+    flex-basis: 100%;
+    .news{
+      min-height: 100px;
+      &-article{
+        margin-bottom: 25px;
+      }
+    }
+  }
+}

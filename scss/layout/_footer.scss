@@ -1,0 +1,25 @@
+/* === Footer === */
+
+.footer {
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer{
+    .wrapper{
+      padding: 5px;
+      align-items: space-around;
+    }
+    &-copyright, &-links, &-madein{
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+}

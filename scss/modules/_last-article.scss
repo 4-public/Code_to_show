@@ -1,0 +1,93 @@
+/* === Last article module === */
+
+.last-article{
+  img{
+    float: left;
+    margin: 0px 20px 20px 0px;
+  }
+  p{
+    padding: 5px 0;
+    font-size: em(14px);
+    color: $light-color;
+    &:last-of-type{
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .last-article{
+    p{
+      padding: 0;
+      &:first-of-type{
+        padding-top: 20px;
+      }
+      &:nth-of-type(2){
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .last-article{
+    img{
+      float: none;
+      margin-right: 0;
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi){
+  #last-article-img {
+    height: 0;
+    width: 0;
+    padding-left: 200px;
+    padding-top: 200px;
+    background-image: url(../img/main/photo_1@2x.png);
+    background-size: 200px 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #last-article-img {
+    height: 0;
+    width: 0;
+    padding-left: 307px;
+    padding-top: 307px;
+    background-image: url(../img/main/photo_tablet_1.png);
+    background-size: 307px 307px;
+    }
+}
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (max-width: 768px) and (min-resolution: 144dpi) {
+  #last-article-img {
+    height: 0;
+    width: 0;
+    padding-left: 307px;
+    padding-top: 307px;
+    background-image: url(../img/main/photo_tablet_1@2x.png);
+    background-size: 307px 307px;
+  }
+}
+@media screen and (max-width: 640px) {
+  #last-article-img {
+    height: 0;
+    width: 0;
+    padding-left: 280px;
+    padding-top: 280px;
+    background-image: url(../img/main/photo_mobile_1.png);
+    background-size: 280px 280px;
+  }
+}
+@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (max-width: 640px) and (min-resolution: 144dpi) {
+  #last-article-img {
+    height: 0;
+    width: 0;
+    padding-left: 280px;
+    padding-top: 280px;
+    background-image: url(../img/main/photo_mobile_1@2x.png);
+    background-size: 280px 280px;
+  }
+}
