@@ -4,7 +4,7 @@
 * HTML5,
 * css3 flex grid,
 * css SMAcss methodology,
-* SASS preprpocessor,
+* SASS preprocessor,
 * Retina frendly,
-* pure JavaScript
+* pure JavaScript with Ajax,
 * gulp task runner
