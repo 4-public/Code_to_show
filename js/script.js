@@ -22,7 +22,7 @@ window.onload = function(){
     mClose.addEventListener("click", toggleHide, false);
     mShow.addEventListener("click", toggleHide, false);
   }
-  else if (menuClose.attachEvent){
+  else if (mClose.attachEvent){
     mClose.attachEvent("onclick", toggleHide);
     mShow.attachEvent("onclick", toggleHide);
   }

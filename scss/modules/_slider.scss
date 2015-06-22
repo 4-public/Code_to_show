@@ -113,6 +113,14 @@
   }
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .slide{
+    .feature{
+      height: 175px;
+    }
+  }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi){
   .banner{
     background-image: url(../img/header/slider/banner_desktop@2x.png);

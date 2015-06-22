@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     minifycss = require('gulp-minify-css'),
+    sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('gulp-autoprefixer'),
     livereload = require('gulp-livereload'),
     connect = require('gulp-connect');
@@ -14,6 +15,7 @@ gulp.task('connect', function() {
 
 gulp.task('sass', function () {
   gulp.src('scss/style.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass()
     .on('error', sass.logError))
     .pipe(autoprefixer(
@@ -22,6 +24,7 @@ gulp.task('sass', function () {
       'ie 9'
       ))
     //.pipe(minifycss())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('css/'))
     .pipe(connect.reload());
 });
