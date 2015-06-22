@@ -1,4 +1,4 @@
-## Code example for VicMan
+## Code example
 
 #### *Technologies applied on this example project:*
 * HTML5,
